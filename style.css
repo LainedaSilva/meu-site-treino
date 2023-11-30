@@ -24,7 +24,7 @@ body {
 .cabecalho__menu__link {
     padding: 24px;
     font-family: 'Heebo' , sans-serif;
-    font-size: 30px;
+    font-size: 1.88rem;
     font-weight: 500;
     color: black;
     text-decoration: none;
@@ -38,20 +38,20 @@ body {
 }
 
 .apresentcao__conteudo {
-    width: 300px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 44px;
+    font-size: 2.75rem;
     font-family: 'Heebo' , sans-serif;
     margin: 30px;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Heebo' , sans-serif;
     margin: 30px;
 }
@@ -72,9 +72,9 @@ body {
     border-radius: 8px;
     border: 2px solid #FF6464;
     background-color: #FF6464;
-    width: 378px;
+    width: 50%;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 550;
     padding: 12px 0;
     text-decoration: none;
@@ -83,16 +83,39 @@ body {
 
 }
 
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
 .rodape {
     padding: 24px;
     color: white;
     background-color:#FF6464;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Heepo' , sans-serif;
     font-weight: 400;
+    
 }
 
+@media (max-width: 1200px) {
 
+    .cabecalho {
+        padding: 10%;
+    }
 
+    .cabecalho__menu {
+        justify-content: center;
+    }
 
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+}
